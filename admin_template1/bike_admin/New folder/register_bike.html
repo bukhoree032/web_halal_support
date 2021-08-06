@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Register_Bike | Bike for dad</title>
+
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
+   <!-- Google Font -->
+  <link rel="stylesheet" href="../noto_web_font/stylesheet.css">
+ <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<style type="text/css">
+ body{
+      font-family: 'Kanit', sans-serif;
+    }
+    h1,h3{
+       font-family: 'Kanit', sans-serif;
+    }
+    .col-sm-12.form{
+      display: inline-block;
+      
+    }
+    .col-sm-12 {
+      background-color: white;
+      
+    }
+    label,h3,h1{
+      color: #ac8d29;
+    }
+    .col-sm-6{
+      background-color: white;
+      padding-bottom: 20px;
+      padding-top: 5px;
+      
+    }
+    .form-control{
+      
+      padding: 3px;
+      padding-left: 13px;
+      width: 100%
+      border:none;
+
+    }
+    .bg-light {
+      background-color: #f8f9fa!important;
+    }
+    .form-control,.myselect{
+      border:0!important;
+    }
+    .rounded-pill{
+         padding-right: 50px;
+         padding-left: 50px;
+         background-color: #00aeef;
+         color: white !important;
+         margin-right: 6px;
+      }
+      .rounded-pill:hover{
+        background-color: #00aeef;
+        color: white !important; 
+      }
+      h1.box-title.text-center{
+        padding-bottom: 11px;
+      }
+      .text-center.mb-4{
+        padding-bottom: 25px;
+      }
+     nav.navbar.navbar-static-top,a.logo{
+      background-color: #FFE800 !important;
+     }
+     .sidebar-menu li.active a{
+      border-left-color: #FFE800 !important;
+     }
+</style>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+   <header class="main-header">
+    <!-- Logo -->
+    <a href="../index2.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>BFD</b></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>BIKE FOR DAD</b></span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="../#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>ADMINISTRATION</p>
+          <a href="../#"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+      <!-- search form -->
+      
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">BIKE FOR DAD</li>
+        <li>
+          <a href="home.html">
+            <i class="fa fa-dashboard"></i> <span>แผงควบคุม</span>
+            <span class="pull-right-container"></span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="confirm.html">
+            <i class="fa fa-newspaper-o"></i>
+            <span>กิจกรรม</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu ">
+            <li class="active"><a href="confirm.html"><i class="fa fa-circle-o"></i> ยืนยันลงทะเบียน/รับของที่ระลึก</a></li>
+          </ul>
+        </li>
+        <li>
+                <a href="accident.html">
+                <i class="fa fa-hospital-o"></i> <span>รายงานอุบัติเหตุ</span>
+                <span class="pull-right-container">
+                </span>
+                </a>
+        </li>
+        <li>
+                <a href="chart.html">
+                <i class="fa fa-bar-chart"></i> <span>รายงานสถติ</span>
+                <span class="pull-right-container">
+                </span>
+                </a>
+        </li>
+        <li class="active">
+                <a href="register_bike.html">
+                <i class="fa fa-pencil-square-o"></i> <span>ลงทะเบียนปั่นเพื่อพ่อ</span>
+                <span class="pull-right-container">
+                </span>
+                </a>
+        </li>
+       <li class="treeview">
+            <li class="header" style="font-size: 15px;">สำหรับเจ้าหน้าที่</li>
+        </li>
+        <li class="treeview">
+          <a href="../#">
+            <i class="fa fa-laptop"></i>
+            <span>จัดการข้อมูลเจ้าหน้าที่</span>
+            <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+            </span>
+            </a>
+            <ul class="treeview-menu">
+            <li><a href="confirm.html"><i class="fa fa-circle-o"></i>เพิ่ม/ลบ/แก้ไข ข้อมูลเจ้าหนาที่</a></li>
+            <li><a href="confirm.html"><i class="fa fa-circle-o"></i>ยืนยันการลงทะเบียนของเจ้าหนาที่</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+            <li class="header" style="font-size: 15px;">สำหรับผู้ดูแลระบบ</li>
+        </li>
+        <li class="treeview">
+          <a href="../#">
+            <i class="fa fa-user-circle"></i>
+            <span>จัดการข้อมูล</span>
+            <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+            </span>
+            </a>
+            <ul class="treeview-menu">
+            <li><a href="confirm.html"><i class="fa fa-circle-o"></i>เพิ่ม/ลบ/แก้ไข ข้อมูลเจ้าหนาที่</a></li>
+            <li><a href="confirm.html"><i class="fa fa-circle-o"></i>ยืนยันการลงทะเบียนของเจ้าหนาที่</a></li>
+          </ul>
+        </li>
+        <li>
+                <a href="../index.html">
+                <i class="fa fa-power-off"></i> <span>ออกจากระบบ</span>
+                <span class="pull-right-container"></span>
+                </a>
+        </li>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h3>
+        <b>ลงทะเบียนปั่นเพื่อพ่อ</b>
+        <small></small>
+      </h3>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> หน้าหลัก</a></li>
+        <li class="active">ลงทะเบียนปั่นเพื่อพ่อ</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+
+          <div class="box">
+           
+            <div class="row">
+                <div class="col-sm-12 form" >
+                 <h1 class="box-title text-center"><i class="fa fa-pencil-square-o"></i> <b>ลงทะเบียน</b></h1> 
+                  <form name="form1" id="form_thai" method="post" action="" enctype="multipart/form-data">
+                    <div class="form-row data">
+                      <div class="col col-sm-6 col-md">
+                        <label>ลงทะเบียนร่วมกิจกรรมจังหวัด</label>
+                        <font color="red">*</font>
+                        <select class="th myselect form-control bg-light" id="" name="m_province">
+                          <option value="" selected>เลือกจังหวัด (Select province)</option>
+                           <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                            <option value="กระบี่">กระบี่ </option>
+                            <option value="กาญจนบุรี">กาญจนบุรี </option>
+                            <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
+                            <option value="กำแพงเพชร">กำแพงเพชร </option>
+                            <option value="ขอนแก่น">ขอนแก่น</option>
+                            <option value="จันทบุรี">จันทบุรี</option>
+                            <option value="ฉะเชิงเทรา">ฉะเชิงเทรา </option>
+                            <option value="ชัยนาท">ชัยนาท </option>
+                            <option value="ชัยภูมิ">ชัยภูมิ </option>
+                            <option value="ชุมพร">ชุมพร </option>
+                            <option value="ชลบุรี">ชลบุรี </option>
+                            <option value="เชียงใหม่">เชียงใหม่ </option>
+                            <option value="เชียงราย">เชียงราย </option>
+                            <option value="ตรัง">ตรัง </option>
+                            <option value="ตราด">ตราด </option>
+                            <option value="ตาก">ตาก </option>
+                            <option value="นครนายก">นครนายก </option>
+                            <option value="นครปฐม">นครปฐม </option>
+                            <option value="นครพนม">นครพนม </option>
+                            <option value="นครราชสีมา">นครราชสีมา </option>
+                            <option value="นครศรีธรรมราช">นครศรีธรรมราช </option>
+                            <option value="นครสวรรค์">นครสวรรค์ </option>
+                            <option value="นราธิวาส">นราธิวาส </option>
+                            <option value="น่าน">น่าน </option>
+                            <option value="นนทบุรี">นนทบุรี </option>
+                            <option value="บึงกาฬ">บึงกาฬ</option>
+                            <option value="บุรีรัมย์">บุรีรัมย์</option>
+                            <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์ </option>
+                            <option value="ปทุมธานี">ปทุมธานี </option>
+                            <option value="ปราจีนบุรี">ปราจีนบุรี </option>
+                            <option value="ปัตตานี">ปัตตานี </option>
+                            <option value="พะเยา">พะเยา </option>
+                            <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา </option>
+                            <option value="พังงา">พังงา </option>
+                            <option value="พิจิตร">พิจิตร </option>
+                            <option value="พิษณุโลก">พิษณุโลก </option>
+                            <option value="เพชรบุรี">เพชรบุรี </option>
+                            <option value="เพชรบูรณ์">เพชรบูรณ์ </option>
+                            <option value="แพร่">แพร่ </option>
+                            <option value="พัทลุง">พัทลุง </option>
+                            <option value="ภูเก็ต">ภูเก็ต </option>
+                            <option value="มหาสารคาม">มหาสารคาม </option>
+                            <option value="มุกดาหาร">มุกดาหาร </option>
+                            <option value="แม่ฮ่องสอน">แม่ฮ่องสอน </option>
+                            <option value="ยโสธร">ยโสธร </option>
+                            <option value="ยะลา">ยะลา </option>
+                            <option value="ร้อยเอ็ด">ร้อยเอ็ด </option>
+                            <option value="ระนอง">ระนอง </option>
+                            <option value="ระยอง">ระยอง </option>
+                            <option value="ราชบุรี">ราชบุรี</option>
+                            <option value="ลพบุรี">ลพบุรี </option>
+                            <option value="ลำปาง">ลำปาง </option>
+                            <option value="ลำพูน">ลำพูน </option>
+                            <option value="เลย">เลย </option>
+                            <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+                            <option value="สกลนคร">สกลนคร</option>
+                            <option value="สงขลา">สงขลา </option>
+                            <option value="สมุทรสาคร">สมุทรสาคร </option>
+                            <option value="สมุทรปราการ">สมุทรปราการ </option>
+                            <option value="สมุทรสงคราม">สมุทรสงคราม </option>
+                            <option value="สระแก้ว">สระแก้ว </option>
+                            <option value="สระบุรี">สระบุรี </option>
+                            <option value="สิงห์บุรี">สิงห์บุรี </option>
+                            <option value="สุโขทัย">สุโขทัย </option>
+                            <option value="สุพรรณบุรี">สุพรรณบุรี </option>
+                            <option value="สุราษฎร์ธานี">สุราษฎร์ธานี </option>
+                            <option value="สุรินทร์">สุรินทร์ </option>
+                            <option value="สตูล">สตูล </option>
+                            <option value="หนองคาย">หนองคาย </option>
+                            <option value="หนองบัวลำภู">หนองบัวลำภู </option>
+                            <option value="อำนาจเจริญ">อำนาจเจริญ </option>
+                            <option value="อุดรธานี">อุดรธานี </option>
+                            <option value="อุตรดิตถ์">อุตรดิตถ์ </option>
+                            <option value="อุทัยธานี">อุทัยธานี </option>
+                           <option value="อุบลราชธานี">อุบลราชธานี</option>
+                          <option value="อ่างทอง">อ่างทอง </option>
+                        </select>
+                      </div>
+                      <div class="col col-sm-6 col-md">
+                        <label>เลขบัตรประชาชน</label>
+                        <font color="red">*</font>
+                        <input type="text" class="th form-control passport bg-light" placeholder="เลขบัตรประชาชน" id="" name="m_passport_no" onblur="onblur_passport()">
+                      </div>
+                    </div>
+                    <div class="form-row data">
+                      <div class="col col-sm-4 col-md">
+                        <label>ประเทศ</label>
+                        <font color="red">*</font>
+                        <input type="text" class="th form-control bg-light " id="" name="m_country" placeholder="ประเทศ" >
+                      </div>                      
+                      <div class="col col-sm-4 col-md">
+                        <label>คำนำหน้าชื่อ</label>
+                        <font color="red">*</font>
+                        <select class="th form-control bg-light" id="title_id" name="m_title" placeeholder="เลือกคำนำหน้าชื่อ">
+                          <option value="" selected>เลือกคำนำหน้าชื่อ (Select title)</option>
+                          <option>นาย</option>
+                          <option>นาง</option>
+                          <option>นางสาว</option>
+                          <option>อื่นๆ</option>
+                        </select>
+                      </div>
+                      <div class="col col-sm-4 col-md">
+                        <label>คำนำหน้าอื่นๆ</label>
+                        <font color="red"></font>
+                        <input type="text" class="form-control bg-light" placeholder="คำนำหน้าชื่ออื่นๆ" id="m_other1" name="m_other" value="">
+                      </div> 
+                    </div>
+                    <div class="form-row data">
+                      <div class="col col-sm-6 col-md">
+                        <label>ชื่อ</label>
+                        <font color="red">*</font>
+                        <input type="text" class="th form-control bg-light" id="" placeholder="ชื่อ" name="m_first_name">
+                      </div>
+                      <div class="col col-sm-6 col-md">
+                        <label>นามสกุล</label>
+                        <font color="red">*</font>
+                        <input type="text" class="th form-control bg-light" placeholder="นามสกุล" id="" name="m_surname">
+                      </div>
+                      
+                    </div>
+                    <div class="form-row data">
+                      <div class="col col-sm-4 col-md">
+                        <label>วัน เดือน ปีเกิด</label>
+                        <font color="red">*</font>
+                        <input type="text" class="th form-control bg-light" placeholder="วันเดือนปีเกิด" name="m_date_of_birth" id="dateInput" value="(01/01/2019)">
+                      </div>
+                      <div class="col col-sm-4 col-md">
+                        <label>เพศ</label>
+                        <font color="red">*</font>
+                        <select class="th form-control bg-light" id=""  name="m_sex">
+                          <option value="" selected>เพศ (gender)</option>
+                          <option>ชาย</option>
+                          <option>หญิง</option>
+                        </select>
+                      </div>
+                      <div class="col col-sm-4 col-md" >
+                        <label>หมู่โลหิต</label>
+                        <font color="red">*</font>
+                        <select class="th form-control bg-light" id=""  name="m_blood_type">
+                          <option value="" selected>หมู่โลหิต (Blood type)</option>
+                          <option>O</option>
+                          <option>A</option>
+                          <option>B</option>
+                          <option>AB</option>
+                        </select>
+                      </div> 
+
+                    </div>
+                    <div class="form-row data">
+
+                      <div class="col col-sm-6 col-md">
+                        <label>โรคประจำตัว</label>
+                        <input type="text" class="form-control bg-light" placeholder="โรคประจำตัว" name="m_conginatal_disease">
+                      </div>
+                      <div class="col col-sm-6 col-md">
+                        <label>เบอร์โทรศัพท์มือถือ</label>
+                        <font color="red">*</font>
+                        <input type="text" class="th form-control number bg-light" placeholder="เบอร์โทรศัพท์มือถือ" id="" name="m_telephone_number" onblur="onblur_number()">
+                      </div>
+                    </div>
+                    <div class="form-row data">
+                      <div class="col col-sm-6 col-md">
+                        <label>เบอร์โทรศัพท์ฉุกเฉิน</label>
+                        <font color="red">*</font>
+                        <input type="text" class="th form-control contact_number bg-light" placeholder="เบอร์โทรศัพท์ฉุกเฉิน" id="" name="m_number_contact" onblur="onblur_contact()">
+                      </div>
+                      <div class="col col-sm-6 col-md">
+                        <label>อีเมลล์</label>
+                        <font color="red">*</font>
+                        <input type="text" class="th form-control email bg-light" placeholder="อีเมลล์" id="" name="m_email_address" onblur="onblur_email()">
+                      </div>
+                    </div>
+                    <div class="form-row data">
+                      <div class="col col-sm-6 col-md">
+                        <label>ไซต์เสื้อ</label>
+                        <font color="red">*</font>
+                        <input type="text" class="th form-control bg-light" placeholder="ไซต์เสื้อ" name="m_size">
+                      </div>
+                      <div class="col col-sm-6 col-md">
+                        <label>รูปภาพบัตประจำตัวประชาชน</label>
+                        <font color="red">*</font>
+                        <input type="file" class="th form-control pic " id="" name="m_upload_passport"  >
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="text-center mb-4">
+                                 <button type="submit" class="btn btn mt-3 rounded-pill"><b>ตกลง</b></button>
+                                  <button  class="btn btn mt-3 rounded-pill"><b>ยกเลิก</b></button>
+                                  </div>
+                    </div>
+                  </form>
+      </div>
+    </div>
+              
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+   
+  </footer>
+
+
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
+<script type="text/javascript">
+  function onblur_number(){
+    $(".number + span.require").remove();  
+    $(".th ").each(function(){ 
+        var name = $(this).attr("name")
+    var val =$(this).val()
+        if (name=="m_telephone_number") {
+            var check_number = check_telephone_number(val)
+            if (check_number==false){
+              $(this).after("<span class='require' style ='color:red'>*ตรวจสอบเบอร์โทรศัพท์ให้ถูกต้อง</span>")
+            }
+        }     
+    });
+  }
+  function onblur_contact(){
+    $(".contact_number + span.require").remove();  
+    $(".th ").each(function(){ 
+        var name = $(this).attr("name")
+    var val =$(this).val()
+        if (name=="m_number_contact") {
+          var check_contact = check_telephone_number(val)
+          if (check_contact==false) {
+              $(this).after("<span class='require' style ='color:red'>*ตรวจสอบเบอร์โทรศัพท์ให้ถูกต้อง</span>")
+          }else{        
+          }
+        }
+    });
+  }
+  function onblur_email(){
+    $(".email + span.require").remove();  
+    $(".th ").each(function(){ 
+        var name = $(this).attr("name")
+    var val =$(this).val()
+        if (name=="m_email_address") {
+          var check_email = check_email_address(val)
+          if (check_email==false) {
+              $(this).after("<span class='require' style ='color:red'>*รูปแบบE-Mailไม่ถูกต้อง</span>")
+          }else{            
+          }
+        }
+    });
+  }
+  function onblur_passport(){
+    $(".passport + span.require").remove();  
+    $(".th ").each(function(){ 
+        var name = $(this).attr("name")
+    var val =$(this).val()
+        if (name=="m_passport_no") {
+          var check_passport = check_passport_f(val)
+          if (check_passport==false) {
+              $(this).after("<span class='require' style ='color:red'>*ตรวจสอบเลขบัตรประชาชนให้ถูกต้อง</span>")
+          }else{        
+          }
+        }
+    });
+  }
+</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    // ส่วนของการกำหนดการตั้งค่าการใช้งาน ajax ของ jquery
+      // เพิ่มเติม https://api.jquery.com/jQuery.ajax/
+      // กรณีใช้งานอัพโหลดไฟล์ด้วย ajax ต้องกำหนด  contentType: false, และ processData: false
+    $.ajaxSetup({
+          cache: false,
+          contentType: false,
+          processData: false
+      }); 
+        //เรียกใช้ evnet submit
+          $("#form_thai").submit(function(evan) {
+            evan.preventDefault(); // ปิดการใช้งาน submit เพื่อใช้งานผ่าน ajax
+        $(".th + span.require").remove();
+        $(".select2 + .require").remove();
+        $(".th").each(function(){
+            //ดึงnameจากform
+            var name = $(this).attr("name")
+              var val = $(this).val()
+             //เช็คค่าว่าง
+             if (val=="" || val=="(01/01/2019)") {
+                 $(this).after("<span class='require'style ='color:red'>*จำเป็นต้องกรอก</span>")
+                    if($(this).hasClass("myselect")){       
+                        $(this).next('.require').hide();
+                        $(this).next('.require').next('.select2').after("<span class='require'style ='color:red'>*จำเป็นต้องกรอก</span>")
+                      }
+             }else{
+                //เช็คความถูกต้อง
+                if (name=="m_passport_no") {
+                  var check = check_passport_no(val)            
+                 if (check==false) {
+                    $(this).after("<span class='require' style ='color:red'>*เลขบัตรประชาชนไม่ถูกต้อง</span>")
+                 }
+                }
+               if (name=="m_telephone_number") {
+                  var check_telephone = check_telephone_number(val)
+                  if (check_telephone==false) {
+                      $(this).after("<span class='require' style ='color:red'>*ตรวจสอบเบอร์โทรศัพท์ให้ถูกต้อง</span>")
+                  }
+               }
+               if (name=="m_number_contact") {
+                  var check_number = check_telephone_number(val)
+                  if (check_number==false) {
+                      $(this).after("<span class='require' style ='color:red'>*ตรวจสอบเบอร์โทรศัพท์ให้ถูกต้อง</span>")
+                  }
+               }
+               if (name=="m_email_address") {
+                  var check_email = check_email_address(val)
+                  if (check_email==false) {
+                      $(this).after("<span class='require' style ='color:red'>*รูปแบบE-Mailไม่ถูกต้อง</span>")
+                  }
+               }
+               if (name=="m_title") {
+                  var check_title = check_m_title(val)
+                  if (check_title==false) {
+                      // $(this).after("<span class='require' style ='color:red'>*รูปแบบE-Mailไม่ถูกต้อง</span>")
+                  }
+               }
+           }             
+          });
+          if($(".th ").next().is(".require")==false){
+            if ($("#m_other1 ").next().is(".require")!=false) {
+              return false;
+            }else{
+              // เตรียมข้อมูล form สำหรับส่งด้วย  FormData Object
+                var formData = new FormData($(this)[0]);
+                $.post("<?php echo site_url('member_control/save') ?>",formData,function(data){
+                        console.log(data);
+                        if (data=='p_false') {
+
+                          $('#myModal_p').modal('show');
+
+                        }else if (data=='false_file') {
+
+                          $('#myModal_false').modal('show');
+
+                        }else if (data=='false_activities') {
+
+                          $('#myModal_false').modal('show');
+
+                        }else if (data=='false_mail') {
+
+                          $('#myModal_false').modal('show');
+
+                        }else if (data=='true') {
+
+                    document.getElementById("form_thai").submit();                      
+                  }
+                });
+            }
+          }else{
+              return false;  
+          }
+      });
+    }); 
+  function check_passport_no(passport_no)
+    {
+    if(passport_no.length != 13) return false;
+      for(i=0, sum=0; i < 12; i++)
+        sum += parseFloat(passport_no.charAt(i))*(13-i); 
+        console.log(sum);
+        if((11-sum%11)%10!=parseFloat(passport_no.charAt(12)))
+          return false; return true;
+    }
+  function check_passport_f(passport)
+    {
+      var patt = /^[0-9]{13}/
+      if(!passport.match(patt)){
+        return false;
+      }if(passport.length != 13 ) {
+        return false;
+      }
+    }
+  function check_telephone_number(telephone_number)
+    { 
+      // var obj_l2=obj_l-1; 
+      var patt = /^[0]{1}[0-9]{8}/
+      if(telephone_number.match(patt)){
+        if(telephone_number.length == 9) {
+          return true;
+        }else if(telephone_number.length == 10) {
+          return true;
+        }else{
+          return false;
+        }
+      }else{
+        return false;
+      }
+    }
+  function check_email_address(email_address)
+    {
+      var emailFilter=/^.+@.+\..{2,3}$/;
+      if (!(emailFilter.test(email_address))) { 
+          return false;
+      }
+    }
+  function check_m_title(m_title)
+    {
+      if (m_title=="อื่นๆ") {
+        $("#m_other1 + span.require").remove();
+          $("#m_other1").each(function(){
+              $(this).each(function(){    
+                  if($(this).val()==""){
+                      $(this).after("<span class='require'style ='color:red'>*จำเป็นต้องกรอก</span>")
+                  }
+              });
+          });
+      }else{
+        $("#m_other1 + span.require").remove();
+      }
+    }
+</script>       
+<script type="text/javascript">
+  $(".myselect").select2();
+</script>
+
+<script type="text/javascript">
+    $(function(){
+        $("#dateInput").datepicker({
+            dateFormat: 'dd/mm/yy',
+        changeMonth: true,
+        changeYear: true
+        });
+    });
+</script>
+
+</body>
+</html>

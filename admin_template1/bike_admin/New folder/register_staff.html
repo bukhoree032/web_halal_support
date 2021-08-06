@@ -1,0 +1,502 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<!-- modal -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- responsive -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  	 <!-- ลิงค์bootstrapcdn -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+
+	<!-- selec2 -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/css/select2.min.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/js/select2.min.js"></script>
+
+	<!-- ไอคอน -->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+	<!-- font -->
+	<link href="../noto_web_font/stylesheet.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+	<title></title>
+	<style type="text/css">
+		body{
+			background: url('../pic/back.jpg');
+			background-size: auto;
+    		background-repeat: repeat;
+    		font-family: 'Kanit', sans-serif;
+		}
+		label,h3,p{
+			 font-family: 'Kanit', sans-serif;
+			color: #ac8d29;
+			font-weight: 700;
+			padding-top: 15px;
+		}
+		h1{
+			font-family: 'Kanit', sans-serif;
+			color: #313585;
+			text-align: center;
+			margin-top: 28px;
+			font-weight: 800px;
+			padding: 7px;
+			margin-bottom: 45px;
+		}
+
+		.col-sm-12.form{
+			display: inline-block;
+		}
+		.col-sm-12 {
+			background-color: white;
+			padding-top: 22px;
+			
+		}
+		.col-sm-12{
+			margin-right: 6px;
+			margin-left: 6px;
+		}
+		.col-sm-6{
+			background-color: white;
+			padding-bottom: 20px;
+			padding-top: 5px;
+			padding-right: 30px;
+			padding-left: 30px;
+		}
+		.form-control{ 
+			padding: 3px;
+			padding-left: 13px;
+			width: 100%
+			border:none;
+		}
+		.container{
+			padding-bottom:82px;
+		}
+		.col.logo img{
+			width: 180px;
+  			margin: 0 auto;	
+  			display: block;
+  			margin-bottom: 17px;
+		}
+		.col-sm-12.form{
+			display: inline-block;
+			padding-right: 30px;
+			padding-left: 30px;
+		}
+		.form-control{
+			border:0!important;
+		}
+		.form-row.data{
+			margin: 10px 0px;
+		}
+		
+		.bg-light {
+			background-color: #f8f9fa!important;
+		}
+		.text-center{
+			  	text-align: center!important;
+			    display: block;
+			    margin: 0 auto;
+			    font-family: 'Noto Sans Thai','Noto Sans', sans-serif;
+		}
+		.rounded-pill{
+			   padding-right: 50px;
+			   padding-left: 50px;
+			   background-color: #00aeef;
+			   color: white;
+			   margin-right: 6px;
+			   margin-bottom: 16px;
+			   border-radius: 0px !important;
+  		}
+  		/*.btn.btn.mt-3{
+  			background-color: #00aeef !important;
+  			color: white;
+  		}*/
+  		.rounded-pill:hover{
+  			background-color: #00aeef;
+			color: white;	
+  		}
+  		.shadow{
+  			box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  		}
+			
+			@media only screen and (max-width:600px) {
+ 		 		.col.logo img{
+   					 width: 150px;
+   					 margin: 0 auto;
+   					 display: block;
+   				}
+			}
+			@media only screen and (max-width:768px) {
+ 		 		.col.logo img{
+   					width: 180px;
+  					margin: 0 auto;
+  					display: block; 
+  				}
+			}
+			@media only screen and (min-width: 1000px){
+				.pad1{
+					background-color: white;
+					padding-bottom: 20px;
+					padding-top: 5px;
+					padding-right: 10px;
+					padding-left: 60px;
+				}
+				.pad2{
+					background-color: white;
+					padding-bottom: 20px;
+					padding-top: 5px;
+					padding-right: 60px;
+					padding-left: 10px;
+				}
+				.col-sm-12.form{
+					display: inline-block;
+					padding-right: 75px;
+					padding-left: 75px;
+				}
+			}
+	</style>			
+</head>
+<body>	
+	<div class="container" >
+		<div class="row">	
+			<div class="col logo" >
+				<img src="../pic/logo.png" style="max-width: 100%;">	
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="text-center">
+				<h3><b><i class="fas fa-edit" style="color: #ac8d29; padding: 6px;font-size: 28px"></i>ลงทะเบียนสำหรับเจ้าหน้าที่ประจำจังหวัด</b></h3>
+				</div>
+			</div>				
+		</div>
+		<div class="row">
+			<div class="col-sm-12 form" >			
+				<form name="form1" id="form_rigister_admin" method="post" action="" enctype="multipart/form-data">
+					<div class="form-row data">
+						<div class="col col-12 col-md">
+							<label>ชื่อ</label>
+							<font color="red">*</font>
+							<input type="text" class="th form-control passport bg-light" placeholder="ชื่อ" id="" name="ad_name" >
+						</div>
+						<div class="col col-12 col-md">
+							<label>นามสกุล</label>
+							<font color="red">*</font>
+							<input type="text" class="th form-control passport bg-light" placeholder="นามสกุล" id="" name="ad_surname">
+						</div>
+					</div>
+					<div class="form-row data">
+						<div class="col col-12 col-md">
+							<label>เลขบัตรประชาชน</label>
+							<font color="red">*</font>
+							<input type="text" class="th form-control bg-light " placeholder="เลขบัตรประชาชน" id="idcard" name="ad_idcard" onblur="onblur_Idcard()"  >
+						</div>						
+						<div class="col col-12 col-md">
+							<label>เบอร์โทรศัพท์</label>
+							<font color="red"></font>
+							<input type="text" class="th form-control bg-light" id="telephon" name="ad_telephon" placeholder="เบอร์โทรศัพท์" value="">
+						</div>	
+						<div class="col col-12 col-md">
+							 <label>จังหวัด</label>
+                        <font color="red">*</font>
+                        <select class="th form-control bg-light" id="" name="ad_province">
+                          <option value="" selected>เลือกจังหวัด (Select province)</option>
+                           <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                            <option value="กระบี่">กระบี่ </option>
+                            <option value="กาญจนบุรี">กาญจนบุรี </option>
+                            <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
+                            <option value="กำแพงเพชร">กำแพงเพชร </option>
+                            <option value="ขอนแก่น">ขอนแก่น</option>
+                            <option value="จันทบุรี">จันทบุรี</option>
+                            <option value="ฉะเชิงเทรา">ฉะเชิงเทรา </option>
+                            <option value="ชัยนาท">ชัยนาท </option>
+                            <option value="ชัยภูมิ">ชัยภูมิ </option>
+                            <option value="ชุมพร">ชุมพร </option>
+                            <option value="ชลบุรี">ชลบุรี </option>
+                            <option value="เชียงใหม่">เชียงใหม่ </option>
+                            <option value="เชียงราย">เชียงราย </option>
+                            <option value="ตรัง">ตรัง </option>
+                            <option value="ตราด">ตราด </option>
+                            <option value="ตาก">ตาก </option>
+                            <option value="นครนายก">นครนายก </option>
+                            <option value="นครปฐม">นครปฐม </option>
+                            <option value="นครพนม">นครพนม </option>
+                            <option value="นครราชสีมา">นครราชสีมา </option>
+                            <option value="นครศรีธรรมราช">นครศรีธรรมราช </option>
+                            <option value="นครสวรรค์">นครสวรรค์ </option>
+                            <option value="นราธิวาส">นราธิวาส </option>
+                            <option value="น่าน">น่าน </option>
+                            <option value="นนทบุรี">นนทบุรี </option>
+                            <option value="บึงกาฬ">บึงกาฬ</option>
+                            <option value="บุรีรัมย์">บุรีรัมย์</option>
+                            <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์ </option>
+                            <option value="ปทุมธานี">ปทุมธานี </option>
+                            <option value="ปราจีนบุรี">ปราจีนบุรี </option>
+                            <option value="ปัตตานี">ปัตตานี </option>
+                            <option value="พะเยา">พะเยา </option>
+                            <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา </option>
+                            <option value="พังงา">พังงา </option>
+                            <option value="พิจิตร">พิจิตร </option>
+                            <option value="พิษณุโลก">พิษณุโลก </option>
+                            <option value="เพชรบุรี">เพชรบุรี </option>
+                            <option value="เพชรบูรณ์">เพชรบูรณ์ </option>
+                            <option value="แพร่">แพร่ </option>
+                            <option value="พัทลุง">พัทลุง </option>
+                            <option value="ภูเก็ต">ภูเก็ต </option>
+                            <option value="มหาสารคาม">มหาสารคาม </option>
+                            <option value="มุกดาหาร">มุกดาหาร </option>
+                            <option value="แม่ฮ่องสอน">แม่ฮ่องสอน </option>
+                            <option value="ยโสธร">ยโสธร </option>
+                            <option value="ยะลา">ยะลา </option>
+                            <option value="ร้อยเอ็ด">ร้อยเอ็ด </option>
+                            <option value="ระนอง">ระนอง </option>
+                            <option value="ระยอง">ระยอง </option>
+                            <option value="ราชบุรี">ราชบุรี</option>
+                            <option value="ลพบุรี">ลพบุรี </option>
+                            <option value="ลำปาง">ลำปาง </option>
+                            <option value="ลำพูน">ลำพูน </option>
+                            <option value="เลย">เลย </option>
+                            <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+                            <option value="สกลนคร">สกลนคร</option>
+                            <option value="สงขลา">สงขลา </option>
+                            <option value="สมุทรสาคร">สมุทรสาคร </option>
+                            <option value="สมุทรปราการ">สมุทรปราการ </option>
+                            <option value="สมุทรสงคราม">สมุทรสงคราม </option>
+                            <option value="สระแก้ว">สระแก้ว </option>
+                            <option value="สระบุรี">สระบุรี </option>
+                            <option value="สิงห์บุรี">สิงห์บุรี </option>
+                            <option value="สุโขทัย">สุโขทัย </option>
+                            <option value="สุพรรณบุรี">สุพรรณบุรี </option>
+                            <option value="สุราษฎร์ธานี">สุราษฎร์ธานี </option>
+                            <option value="สุรินทร์">สุรินทร์ </option>
+                            <option value="สตูล">สตูล </option>
+                            <option value="หนองคาย">หนองคาย </option>
+                            <option value="หนองบัวลำภู">หนองบัวลำภู </option>
+                            <option value="อำนาจเจริญ">อำนาจเจริญ </option>
+                            <option value="อุดรธานี">อุดรธานี </option>
+                            <option value="อุตรดิตถ์">อุตรดิตถ์ </option>
+                            <option value="อุทัยธานี">อุทัยธานี </option>
+                           <option value="อุบลราชธานี">อุบลราชธานี</option>
+                          <option value="อ่างทอง">อ่างทอง </option>
+                        </select>
+						</div>					
+					</div>
+					<div class="form-row data">
+						<div class="col col-12 col-md">
+							<label>อีเมลล์</label>
+							<font color="red">*</font>
+							<input type="text" class="th form-control bg-light" id="m_other1" placeholder="อีเมลล์" name="ad_email_address">
+						</div>
+						<div class="col col-12 col-md">
+							<label>รหัสผ่าน</label>
+							<font color="red">*</font>
+							<input type="text" class="th form-control bg-light" placeholder="รหัสผ่าน" name="ad_password" id="password" >
+						</div>
+						<div class="col col-12 col-md">
+							<label>ยืนยันรหัสผ่าน</label>
+							<font color="red">*</font>
+							<input type="text" class="th form-control bg-light" placeholder="ยืนยันรหัสผ่าน" name="ad_password_confrim" id="password_confrim" "onblur="onblur_pass()">
+						</div>					
+					</div>
+					<div class="row">
+						<div class="text-center mb-4">
+	         				<button type="submit" class="btn btn mt-3 rounded-pill"><b>ลงทะเบียน</b></button>
+	                        <br><p class="log"><b>*มีบันชีผู้ใช้อยู่แล้ว </b> <a href="../index.html"><b><u>เข้าสู่ระบบ</u></b></a></p>
+                        </div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+  function onblur_email(){
+    $(".email + span.require").remove();  
+    $(".th ").each(function(){ 
+        var name = $(this).attr("name")
+        var val =$(this).val()
+        if (name=="ad_email_address") {
+          var check_email = check_email_address(val)
+          if (check_email==false) {
+              $(this).after("<span class='require' style ='color:red'>*รูปแบบE-Mailไม่ถูกต้อง</span>")
+          }
+        }
+    });
+  }
+  function onblur_password_confrim(){
+    $("#password_confrim + span.require").remove();  
+    $(".th ").each(function(){
+        var name = $(this).attr("name")
+        var val =$(this).val()
+        if (name=="ad_password") {
+            check_ad_password_confrim(val)
+        }     
+    });
+  }
+  function onblur_password(){
+    $("#password + span.require").remove();  
+    $(".th ").each(function(){ 
+        var name = $(this).attr("name")
+        var val =$(this).val()
+        if (name=="ad_password") {
+          var check_password = check_ad_password(val)
+          if (check_password==false) {
+              $(this).after("<span class='require' style ='color:red'>*รหัสผ่านต้องมีความยาวอย่างน้อย 8 ตัว</span>")
+          }else{              
+          }
+        }
+    });
+  }
+  function onblur_Idcard(){
+    $("#idcard + span.require").remove();  
+    $(".th ").each(function(){ 
+        var name = $(this).attr("name")
+        var val =$(this).val()
+        if (name=="ad_idcard") {
+          var check_idcard = check_ad_idcard(val)
+          if (check_idcard==false) {
+              $(this).after("<span class='require' style ='color:red'>*ตรวจสอบเลขบัตรประชาชนให้ถูกต้อง</span>")
+          }else{              
+          }
+        }
+    });
+  }
+  function onblur_telephon(){
+    $("#telephon + span.require").remove();  
+    $(".th ").each(function(){ 
+        var name = $(this).attr("name")
+        var val =$(this).val()
+        if (name=="ad_telephon") {
+          var check_telephon = check_ad_telephon(val)
+          if (check_telephon==false) {
+              $(this).after("<span class='require' style ='color:red'>*ตรวจสอบเบอร์โทรศัพท์ให้ถูกต้อง</span>")
+          }else{
+          }
+        }
+    });
+  }
+</script>
+<script type="text/javascript">  
+      $(document).ready(function() {
+        $("#form_rigister_admin").submit(function(evan) {
+          evan.preventDefault();
+            $(".th + span.require").remove();  
+            $(".th ").each(function(){
+                var name = $(this).attr("name")
+                var val =$(this).val()
+               //เช็คค่าว่าง
+                if (val=="") {
+                    $(this).after("<span class='require'style ='color:red'>*จำเป็นต้องกรอก</span>")
+                }else{
+                    if (name=="ad_email_address") {
+                      var check_email = check_email_address(val)
+                      if (check_email==false) {
+                          $(this).after("<span class='require' style ='color:red'>*รูปแบบE-Mailไม่ถูกต้อง</span>")
+                      }
+                    }
+                    if (name=="ad_password") {
+                      var check_password = check_ad_password(val)
+                      if (check_password==false) {
+                          $(this).after("<span class='require' style ='color:red'>*รหัสผ่านต้องมีความยาวอย่างน้อย 8 ตัว</span>")
+                      }
+                    }
+                    if (name=="ad_password") {
+                        check_ad_password_confrim(val)
+                    }  
+                    if (name=="ad_idcard") {
+                      var check_idcard = check_ad_idcard(val)
+                      if (check_idcard==false) {
+                          $(this).after("<span class='require' style ='color:red'>*ตรวจสอบเลขบัตรประชาชนให้ถูกต้อง</span>")
+                      }else{       
+                      }
+                    }
+                    if (name=="ad_telephon") {
+                      var check_telephon = check_ad_telephon(val)
+                      if (check_telephon==false) {
+                          $(this).after("<span class='require' style ='color:red'>*ตรวจสอบเบอร์โทรศัพท์ให้ถูกต้อง</span>")
+                      }else{       
+                      }
+                    }
+                }
+            });
+            if($(".th ").next().is(".require")==false){
+                  $.ajax({
+                         type: "POST",
+                         url: "<?php echo site_url('Admin_login_control/insert_register') ?>",
+                         data: $("#form_rigister_admin").serialize(),
+                         success: function($result) {
+                              console.log($result);
+                             if ($result=='register_success') {
+                                document.getElementById("form_rigister_admin").submit();
+                             }else {
+                                $('#myModal_register_admin').modal('show');
+                             }
+                         }
+                      });
+            }else{
+                return false;  
+            }
+        });
+    });
+</script>
+<script>
+    function check_email_address(email_address)
+    {
+      var emailFilter=/^.+@.+\..{2,3}$/;
+      if (!(emailFilter.test(email_address))) { 
+          return false;
+      }
+    }
+     function check_ad_password(password_confrim)
+    {
+      var patt = /^[0-9 a-z A-Z]{8}/
+      if(!password_confrim.match(patt)){
+        return false;
+      }
+    }
+    function check_ad_password_confrim(password_confrim)
+    {
+      $("#password_confrim + span.require").remove();
+      $("#password_confrim").each(function(){
+          $(this).each(function(){    
+              if($(this).val()!=password_confrim){
+                  $(this).after("<span class='require'style ='color:red'>*ยืนยันรหัสผ่านไม่ถูกต้อง</span>")
+              }
+          });
+      });
+    }
+    function check_ad_idcard(idcard)
+    {
+      if(idcard.length != 13) return false;
+      for(i=0, sum=0; i < 12; i++)
+        sum += parseFloat(idcard.charAt(i))*(13-i); 
+        console.log(sum);
+        if((11-sum%11)%10!=parseFloat(idcard.charAt(12)))
+          return false; return true;;
+    }
+    function check_ad_telephon(telephon)
+    {
+      var patt = /^[0]{1}[0-9]{8}/
+      if(telephon.match(patt)){
+        if(telephon.length == 9) {
+          return true;
+        }else if(telephon.length == 10) {
+          return true;
+        }else{
+          return false;
+        }
+      }else{
+        return false;
+      }
+    }
+</script>
