@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Noto Sans Thai';
+    src: url('subset-NotoSansThai-Light.eot');
+    src: url('subset-NotoSansThai-Light.eot?#iefix') format('embedded-opentype'),
+        url('subset-NotoSansThai-Light.woff2') format('woff2'),
+        url('subset-NotoSansThai-Light.woff') format('woff'),
+        url('subset-NotoSansThai-Light.ttf') format('truetype'),
+        url('subset-NotoSansThai-Light.svg#NotoSansThai-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans Thai';
+    src: url('subset-NotoSansThai-Bold.eot');
+    src: url('subset-NotoSansThai-Bold.eot?#iefix') format('embedded-opentype'),
+        url('subset-NotoSansThai-Bold.woff2') format('woff2'),
+        url('subset-NotoSansThai-Bold.woff') format('woff'),
+        url('subset-NotoSansThai-Bold.ttf') format('truetype'),
+        url('subset-NotoSansThai-Bold.svg#NotoSansThai-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('subset-NotoSans-Bold.eot');
+    src: url('subset-NotoSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('subset-NotoSans-Bold.woff2') format('woff2'),
+        url('subset-NotoSans-Bold.woff') format('woff'),
+        url('subset-NotoSans-Bold.ttf') format('truetype'),
+        url('subset-NotoSans-Bold.svg#NotoSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('subset-NotoSans-Light.eot');
+    src: url('subset-NotoSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('subset-NotoSans-Light.woff2') format('woff2'),
+        url('subset-NotoSans-Light.woff') format('woff'),
+        url('subset-NotoSans-Light.ttf') format('truetype'),
+        url('subset-NotoSans-Light.svg#NotoSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
